@@ -1,0 +1,22 @@
+<div id="weatherSearch">
+	<label for="weatherData">Enter Location (Zip OR City, State)</label> 
+	<input id="weatherData" type="text" maxlength="25"  ng-model="zipCode" placeholder="06611 or Chandigarh, India" style="width: 175px;padding: 5px;" />
+	
+	<button data-ng-click="searchGoogleAPI(zipCode)" 
+			style="background-color: #E5F2FF;border:medium;color: #939393 ; height: 37px; width: 200px; font: Helvetica; font-family: Arial, Helvetica, sans-serif;  font-stretch: wider;">
+			Get Weather
+	</button>
+	
+	<br>
+	
+	<label for="singleSelect"> Single select: </label>
+	
+    <select name="singleSelect"  style="width: 175px;padding: 5px;" >
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+    </select>
+    
+    <br>
+</div> 
+
+

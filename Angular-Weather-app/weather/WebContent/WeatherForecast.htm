@@ -1,0 +1,14 @@
+<div id="someOtherDIVWithFakeID" ng-show="weatherInformation" >
+	<h3 class="bgColorHeader">Weather Forecast for {{weatherInformation.request[0].type}} : {{weatherInformation.request[0].query}}, Current Conditions {{weatherInformation.current_condition[0].weatherDesc[0].value }} &nbsp; {{weatherInformation.current_condition[0].temp_F }} F/ {{weatherInformation.current_condition[0].temp_C }} C  </h3>
+	<div class="weatherCardsContainer">
+		<div class="weatherCard"  data-ng-repeat="weatherInfo in weatherInformation.weather">
+			  <div class="dateDisplay">{{weatherInfo.date}}</div>
+			  <div style="text-align: center; size: inherit;">
+			  	 <img alt="" src='{{weatherInfo.weatherIconUrl[0].value }}'height="40px" width="40px" style="padding-top: 5px;"/><br>
+			  	 {{weatherInfo.weatherDesc[0].value }}<br>
+			 	 {{weatherInfo.tempMinF }} F &nbsp;/&nbsp;{{weatherInfo.tempMinC }} C<br>
+			 	 {{weatherInfo.tempMaxF }} F &nbsp;/&nbsp;{{weatherInfo.tempMaxC }} C
+			  </div> 
+		</div>
+	</div>	
+</div>

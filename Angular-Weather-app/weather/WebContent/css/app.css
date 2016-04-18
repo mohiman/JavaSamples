@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+.card{
+width: 200px;
+border: 1px solid gray;
+box-shadow: 1px 1px 3px #888;
+border-top: 10px solid green;
+min-height: 250px;
+padding-: 10px;
+margin: 10px;
+}
+#mainbox{
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: left;
+  display: flex;
+flex-wrap: wrap;
+}
+.bgColorHeader
+{
+	background-color: #efefef;
+	padding:10px;
+}
+.weatherCard{
+	width: 138px;
+	height: 138px;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 3px #888;
+	border-top: 10px solid green;
+	padding-: 10px;
+	margin: 10px;
+	background-color: #E4E4E4;
+}
+.weatherCardsContainer{
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.dateDisplay
+{
+  font-family: verdana;
+  box-sizing: border-box;
+  justify-content: center;
+  display: block;
+  background-color: gray;
+  text-align: center;
+}

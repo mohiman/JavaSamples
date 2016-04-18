@@ -1,0 +1,12 @@
+<div class="container">
+	<h2>View 2</h2>
+		Name :  <input type="text" data-ng-model="name"/>  
+	
+		<script type="text/javascript"  src="js/angular/angular.min.js"  ></script>
+		
+		<br/>
+		<ul>
+			<li data-ng-repeat="cust in customers | filter:city | orderBy:'city'">{{cust.name | uppercase}} - {{cust.city | lowercase}} - {{cust.amt | currency}}</li>
+			
+		</ul>
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html data-ng-app="demoApp">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+<meta charset="ISO-8859-1">
+<title>Angular - Weather</title>
+</head>
+<body data-ng-init="">
+	<script src="js/angular/angular.min.js"  ></script>
+	<script src="js/angular/angular-resource.js"></script>
+	<script src="js/angular/angular-route.js"></script>
+	<script src="js/angular/angular-animate.js"></script>
+	<script src="js/angular/angular-datepicker.js"></script>
+	<script src="js/weather/app.js"></script>
+	<script src="js/weather/weatherController.js"></script>
+	<script src="js/weather/weatherDirective.js"></script>
+	<script src="js/weather/weatherService.js"></script>
+	<script src="https://maps.google.com/maps/api/js"></script>
+	<div >
+	<!-- angular div for the views -->
+		<div data-ng-view></div>
+	</div>
+</body>
+</html>
